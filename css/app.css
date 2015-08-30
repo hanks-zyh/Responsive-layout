@@ -41,7 +41,7 @@ header {
       padding: 10px 30px 10px 30px;
       border-radius: 3px; }
       .banner .flex-caption .btns a {
-        color: #ffffff;
+        color: #FFFFFF;
         text-decoration: none; }
   .banner li {
     list-style: none; }
@@ -60,7 +60,7 @@ header {
       margin-top: 2em;
       margin-bottom: 1em;
       padding: 2em;
-      background: #ffffff;
+      background: #FFFFFF;
       box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
       display: flex;
       flex-flow: row wrap;
@@ -91,8 +91,28 @@ header {
         .main .main-list .list-item .item-right .item-info {
           float: right; }
   .main .main-right {
-    width: 27%;
-    background-color: fuchsia; }
+    width: 27%; }
+    .main .main-right .me {
+      margin-top: 2em;
+      margin-bottom: 1em;
+      padding: 2em;
+      background-color: #FFFFFF;
+      box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-flow: column wrap;
+      align-items: center; }
+      .main .main-right .me .follow {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        text-align: center; }
+        .main .main-right .me .follow img {
+          margin: 5px;
+          width: 40px;
+          height: 40px;
+          border-radius: 50%; }
+        .main .main-right .me .follow .btn-follow {
+          margin-top: 40px; }
 
 @media (min-width: 500px) {
   .main .main-list {
@@ -108,7 +128,7 @@ header {
     visibility: visible; } }
 footer {
   background-color: #363D4C;
-  color: #fff;
+  color: #FFFFFF;
   min-height: 200px;
   text-align: center;
   background-color: rgba(0, 0, 0, 0.7); }

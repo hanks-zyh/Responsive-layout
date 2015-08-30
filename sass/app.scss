@@ -2,6 +2,7 @@
 $bgBlack: #363D4C;
 $bgGreen: #46B855;
 $bgGrey: #F0F2F7;
+$bgWhite: #FFFFFF;
 $fontColor1: #3D4B66;
 $fontColor2: #626773;
 $fontColor3: #737f99;
@@ -41,7 +42,7 @@ header {
       overflow: hidden;
       color: $fontColor1;
     }
-      a {
+    a {
     }
     .slides_entry {
       display: block !important;
@@ -60,7 +61,7 @@ header {
       padding: 10px 30px 10px 30px;
       border-radius: 3px;
       a {
-        color: #ffffff;
+        color: $bgWhite;
         text-decoration: none;
       }
     }
@@ -86,7 +87,7 @@ header {
       margin-top: 2em;
       margin-bottom: 1em;
       padding: 2em;
-      background: #ffffff;
+      background: $bgWhite;
       box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
       display: flex;
       flex-flow: row wrap;
@@ -130,12 +131,37 @@ header {
   }
   .main-right {
     width: 27%;
-    background-color: fuchsia;
+    .me {
+      margin-top: 2em;
+      margin-bottom: 1em;
+      padding: 2em;
+      background-color: $bgWhite;
+      box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-flow: column wrap;
+      align-items: center;
+      .follow {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        text-align: center;
+        img {
+          margin: 5px;
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+        }
+
+        .btn-follow {
+          margin-top: 40px;
+        }
+      }
+    }
   }
 }
 
 @media (min-width: 500px) {
-  .main .main-list{
+  .main .main-list {
     width: 100%;
   }
   .main-right {
@@ -144,7 +170,7 @@ header {
 }
 
 @media (min-width: 1000px) {
-  .main .main-list{
+  .main .main-list {
     width: 70%;
   }
 
@@ -156,7 +182,7 @@ header {
 
 footer {
   background-color: $bgBlack;
-  color: #fff;
+  color: $bgWhite;
   min-height: 200px;
   text-align: center;
   background-color: rgba(0, 0, 0, 0.7);
