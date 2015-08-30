@@ -103,6 +103,7 @@ header {
         h2 {
           font-size: 1.6em;
           margin-top: 0;
+          margin-bottom: 13px;
           a {
             color: $fontColor1;
           }
@@ -110,7 +111,9 @@ header {
         p {
           color: $fontColor2;
           font-size: 1em;
-          line-height: 1.5em;
+          line-height: 1.8em;
+          height: 100px;
+          overflow: hidden;
         }
 
         img {

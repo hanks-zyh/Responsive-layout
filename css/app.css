@@ -74,13 +74,16 @@ header {
         width: 57%; }
         .main .main-list .list-item .item-right h2 {
           font-size: 1.6em;
-          margin-top: 0; }
+          margin-top: 0;
+          margin-bottom: 13px; }
           .main .main-list .list-item .item-right h2 a {
             color: #3D4B66; }
         .main .main-list .list-item .item-right p {
           color: #626773;
           font-size: 1em;
-          line-height: 1.5em; }
+          line-height: 1.8em;
+          height: 100px;
+          overflow: hidden; }
         .main .main-list .list-item .item-right img {
           width: 30px;
           height: 30px;
