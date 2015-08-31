@@ -15,6 +15,7 @@ header {
   background-color: $bgBlack;
 }
 
+//导航
 .hknav {
   background-color: $bgBlack;
 }
@@ -23,6 +24,7 @@ header {
   background-color: $bgGrey;
 }
 
+//轮播
 .banner {
   padding-top: 3.5em;
   padding-bottom: 3.5em;
@@ -46,6 +48,7 @@ header {
         padding: 10px 0 10px 0;
         font-size: 1.5em;
         overflow: hidden;
+        text-overflow: ellipsis;
         a {
           color: $fontColor1;
           text-decoration: none;
@@ -55,9 +58,12 @@ header {
         display: block !important;
         color: $fontColor2;
         font-size: 14px;
-        line-height: 2em;
+        line-height: 1.9em;
+        letter-spacing: 0.1em;
         text-align: justify;
         height: 130px;
+        text-overflow: ellipsis;
+        overflow: hidden;
       }
     }
   }
@@ -124,6 +130,7 @@ header {
           line-height: 1.8em;
           height: 100px;
           overflow: hidden;
+          letter-spacing: 0.1em;
         }
 
         img {
@@ -154,6 +161,12 @@ header {
   background-color: $bgWhite;
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
   text-align: center;
+  h2{
+    font-size: 1.3em;
+    color: $fontColor1;
+    text-align: left;
+    margin: 0 0 1em 0;
+  }
 }
 
 .follow {
@@ -175,8 +188,8 @@ header {
   text-align: left;
   li {
     padding-top: 0.5em;
-    border-bottom:  1px solid $bgGrey;
-    a{
+    border-bottom: 1px solid $bgGrey;
+    a {
       color: $fontColor2;
       font-size: 0.3em;
       line-height: 3em;
@@ -185,16 +198,41 @@ header {
 }
 
 /*标签云*/
-.label-cloud{
+.label-cloud {
   width: 100%;
   display: flex;
   flex-flow: row wrap;
-  .label-item{
-    border: 1px solid forestgreen;
+  .label-item {
+    border: 1px solid $bgGreen;
     padding: 0.5em 0.5em;
     margin: 1em 0.2em;
     font-size: 0.4em;
   }
+}
+
+/*文章归档*/
+.tutime-list {
+  list-style: none;
+  text-align: left;
+  padding: 0px;
+}
+
+.tutime {
+  background: url(../img/datepng.png) no-repeat left center;
+  padding-left: 20px
+}
+
+/*友情链接*/
+.friend-link {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.link-item {
+  font-size: 0.2em;
+  color: $fontColor3;
+  padding: 0.1em;
+  margin: 0.3em 0.3em;
 }
 
 /* 响应式 */
@@ -217,12 +255,56 @@ header {
   }
 }
 
+
+
+/*   文章详情 */
+
+.post-content{
+    padding: 0;
+    color: $fontColor2;
+    
+    p{
+        font-size: 1.1em;
+        line-height: 1.7em;
+        text-align: justify;    
+    }
+    
+    img{
+        margin: 2em auto;
+    }
+}
+
+
+.article-footer {
+  width: 100%;
+  margin: 3em 0;
+  font-size: 1.2em;
+  color: #666;
+  
+  .like{
+      text-align: center;
+  padding: 1.2em 1.2em;
+  margin: 1.2em 0;
+  color: $fontColor2;
+  }
+}
+.other-article {
+  width: 100%;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  font-size: 1.1em;
+  color: $bgGreen;
+}
+.comment {
+  width: 100%;
+}
+
 footer {
   background-color: $bgBlack;
   color: $bgWhite;
   min-height: 200px;
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.7);
 }
 
 ul.share-group {

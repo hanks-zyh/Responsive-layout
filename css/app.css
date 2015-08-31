@@ -30,7 +30,8 @@ header {
         margin-bottom: 10px;
         padding: 10px 0 10px 0;
         font-size: 1.5em;
-        overflow: hidden; }
+        overflow: hidden;
+        text-overflow: ellipsis; }
         .banner .slider-item .flex-caption h2 a {
           color: #3D4B66;
           text-decoration: none; }
@@ -38,9 +39,12 @@ header {
         display: block !important;
         color: #626773;
         font-size: 14px;
-        line-height: 2em;
+        line-height: 1.9em;
+        letter-spacing: 0.1em;
         text-align: justify;
-        height: 130px; }
+        height: 130px;
+        text-overflow: ellipsis;
+        overflow: hidden; }
   .banner li {
     list-style: none; }
 
@@ -94,7 +98,8 @@ header {
           font-size: 0.6em;
           line-height: 1.8em;
           height: 100px;
-          overflow: hidden; }
+          overflow: hidden;
+          letter-spacing: 0.1em; }
         .main .main-list .list-item .item-right img {
           width: 30px;
           height: 30px;
@@ -114,6 +119,11 @@ header {
   background-color: #FFFFFF;
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
   text-align: center; }
+  .card-right h2 {
+    font-size: 1.3em;
+    color: #3D4B66;
+    text-align: left;
+    margin: 0 0 1em 0; }
 
 .follow {
   width: 100%;
@@ -144,10 +154,31 @@ header {
   display: flex;
   flex-flow: row wrap; }
   .label-cloud .label-item {
-    border: 1px solid forestgreen;
+    border: 1px solid #46B855;
     padding: 0.5em 0.5em;
     margin: 1em 0.2em;
     font-size: 0.4em; }
+
+/*文章归档*/
+.tutime-list {
+  list-style: none;
+  text-align: left;
+  padding: 0px; }
+
+.tutime {
+  background: url(../img/datepng.png) no-repeat left center;
+  padding-left: 20px; }
+
+/*友情链接*/
+.friend-link {
+  display: flex;
+  flex-flow: row wrap; }
+
+.link-item {
+  font-size: 0.2em;
+  color: #737f99;
+  padding: 0.1em;
+  margin: 0.3em 0.3em; }
 
 /* 响应式 */
 @media (min-width: 500px) {
@@ -162,12 +193,44 @@ header {
 
   .main-right {
     visibility: visible; } }
+/*   文章详情 */
+.post-content {
+  padding: 0;
+  color: #626773; }
+  .post-content p {
+    font-size: 1.1em;
+    line-height: 1.7em;
+    text-align: justify; }
+  .post-content img {
+    margin: 2em auto; }
+
+.article-footer {
+  width: 100%;
+  margin: 3em 0;
+  font-size: 1.2em;
+  color: #666; }
+  .article-footer .like {
+    text-align: center;
+    padding: 1.2em 1.2em;
+    margin: 1.2em 0;
+    color: #626773; }
+
+.other-article {
+  width: 100%;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  font-size: 1.1em;
+  color: #46B855; }
+
+.comment {
+  width: 100%; }
+
 footer {
   background-color: #363D4C;
   color: #FFFFFF;
   min-height: 200px;
-  text-align: center;
-  background-color: rgba(0, 0, 0, 0.7); }
+  text-align: center; }
 
 ul.share-group {
   display: block;
