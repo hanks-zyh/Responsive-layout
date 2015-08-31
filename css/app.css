@@ -184,18 +184,18 @@ header {
   margin: 0.3em 0.3em; }
 
 /* 响应式 */
-@media (min-width: 500px) {
+@media (min-width: 300px) {
   .main .main-list {
     width: 100%; }
 
-  .main-right {
-    visibility: hidden; } }
+  .main .main-right {
+    width: 100%; } }
 @media (min-width: 1000px) {
   .main .main-list {
     width: 70%; }
 
-  .main-right {
-    visibility: visible; } }
+  .main .main-right {
+    width: 27%; } }
 /*   文章详情 */
 .post-content {
   padding: 0;
