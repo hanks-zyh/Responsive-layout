@@ -126,6 +126,30 @@ header {
     height: 40px;
     border-radius: 50%; }
 
+/* 切换卡 */
+.rank-list {
+  list-style: none;
+  text-align: left; }
+  .rank-list li {
+    padding-top: 0.5em;
+    border-bottom: 1px solid #F0F2F7; }
+    .rank-list li a {
+      color: #626773;
+      font-size: 0.3em;
+      line-height: 3em; }
+
+/*标签云*/
+.label-cloud {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap; }
+  .label-cloud .label-item {
+    border: 1px solid forestgreen;
+    padding: 0.5em 0.5em;
+    margin: 1em 0.2em;
+    font-size: 0.4em; }
+
+/* 响应式 */
 @media (min-width: 500px) {
   .main .main-list {
     width: 100%; }
