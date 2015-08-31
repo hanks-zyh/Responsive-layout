@@ -225,6 +225,27 @@ header {
 
 .comment {
   width: 100%; }
+  .comment p {
+    font-size: 1em;
+    color: #737f99; }
+
+.comment-list img {
+  width: 40px;
+  height: 40px;
+  float: left;
+  margin: 0 1em 0 0; }
+.comment-list .author {
+  color: #626773;
+  font-size: 1em; }
+.comment-list .floor {
+  color: #737f99;
+  font-size: 0.3em; }
+.comment-list p {
+  font-size: 1.2em;
+  color: #3D4B66;
+  margin: 1em 0; }
+.comment-list .comment-footer {
+  text-align: right; }
 
 footer {
   background-color: #363D4C;

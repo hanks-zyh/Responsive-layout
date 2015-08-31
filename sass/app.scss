@@ -298,6 +298,36 @@ header {
 }
 .comment {
   width: 100%;
+  p{
+      font-size: 1em;
+      color: $fontColor3;
+  }
+  
+}
+
+.comment-list{
+    img{
+        width: 40px;
+  height: 40px;
+  float: left;
+  margin: 0 1em 0 0;
+    }
+    .author{
+        color: $fontColor2;
+        font-size: 1em;
+    }
+    .floor{
+        color: $fontColor3;
+        font-size: 0.3em;
+    }
+    p{
+        font-size: 1.2em;
+        color: $fontColor1;
+        margin: 1em 0;
+    }
+    .comment-footer{
+        text-align: right;
+    }
 }
 
 footer {
