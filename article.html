@@ -69,6 +69,7 @@
 										<p>　　当我们被社会上无形的压力压得喘不过气的时候，我们渴望曾经的那份爱，渴望每天下班有人一起吃饭，一起看电影，我们需要有一个人为我们，来分担一些东西。</p>
 										<p>　　我们在一条伟大的航路上，我们需要有人为我们鼓劲，当我们想到身边还有一个让我们牵挂的人，深吸一口气，继续向前走，我相信总有一个能够停靠的彼岸……</p>
 										<p>　　今年我们二十七八岁，无聊时我们没有去玩游戏，我们开始上平购宝购物，挑折扣，买正品。</p>
+
 									</div>
 									<div class="article-footer">
 										<span>原创文章，转载请注明： 转载自HKCODE</span>
@@ -77,27 +78,41 @@
 										</div>
 									</div>
 								</article>
-								<hr	 />
+								<hr />
 								<div class="other-article">
 									<span>&lt;&nbsp;人为什么懒惰</span>
 									<span>Hello World&nbsp;&gt;</span>
 								</div>
 								<div class="comment">
 									<hr />
-									<p>102条评论  ( 按时间正序· 按时间倒序· 按喜欢排序 )&nbsp;&nbsp;&nbsp;&nbsp;添加新评论 </p>
+									<p>102条评论 ( 按时间正序· 按时间倒序· 按喜欢排序 )&nbsp;&nbsp;&nbsp;&nbsp;添加新评论 </p>
 									<hr />
 									<div class="comment-list">
 										<div class="comment-item">
 											<img src="img/ico_04_1.jpg" />
-											<span class="author">超级忍者归</span><br />
+											<span class="author">超级忍者归</span>
+											<br />
 											<span class="floor">15 楼 · 2015.08.31 20:22</span>
 											<p>想念哥哥的时候，只能默默去听他的歌。</p>
 											<div class="comment-footer">
-											<a href="#"><i class="fa fa-thumbs-o-up">&nbsp;&nbsp;</i></a>举报 | 回复
+												<a href="#"><i class="fa fa-thumbs-o-up">&nbsp;&nbsp;</i></a>举报 | 回复
 											</div>
 										</div>
-									</div>
 									<hr />
+									</div>
+									<form class="new_comment" id="new_comment" data-type="json" action="/notes/1947960/comments" accept-charset="UTF-8" data-remote="true" method="post">
+										<input name="utf8" type="hidden" value="✓">
+										<div class="comment-text">
+											<textarea maxlength="2000" placeholder="写下你的评论…" class="comment-content" name="comment[content]" id="comment_content"></textarea>
+											<div>
+												<input type="submit" name="commit" value="发 表" class="btn btn-info" data-disable-with="提交中...">
+												<div class="emoji">
+												</div>
+												<span class="hotkey">Ctrl+Enter 发表</span>
+												<span class="warning" style="display: none"><i class="fa fa-exclamation-circle"></i><span class="warning-text"></span></span>
+											</div>
+										</div>
+									</form>
 								</div>
 							</div>
 						</div>
@@ -202,9 +217,9 @@
 			</div>
 		</footer>
 		<script>
-			window.onload = function () {
-			        $('.carousel').carousel();
-			    }
+			window.onload = function() {
+				$('.carousel').carousel();
+			}
 		</script>
 		<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
 		<script src="js/jquery.min.js"></script>

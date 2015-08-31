@@ -247,6 +247,18 @@ header {
 .comment-list .comment-footer {
   text-align: right; }
 
+.new_comment {
+  width: 100%;
+  margin: 1em 0 0 0; }
+
+.comment-text .comment-content {
+  width: 100%;
+  min-height: 7em;
+  margin: 1.2em 0 1em 0; }
+.comment-text input {
+  float: left;
+  margin: 0 1em 0em 0; }
+
 footer {
   background-color: #363D4C;
   color: #FFFFFF;
