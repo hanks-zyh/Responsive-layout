@@ -106,27 +106,25 @@ header {
   .main .main-right {
     width: 27%; }
 
-.me {
+.card-right {
   width: 100%;
   margin-top: 2em;
   margin-bottom: 1em;
   padding: 2em;
   background-color: #FFFFFF;
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+  text-align: center; }
+
+.follow {
+  width: 100%;
   display: flex;
-  flex-flow: column wrap;
-  align-items: center; }
-  .me .follow {
-    width: 100%;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    text-align: center; }
-    .me .follow img {
-      margin: 5px;
-      width: 40px;
-      height: 40px;
-      border-radius: 50%; }
+  flex-flow: row wrap;
+  justify-content: space-between; }
+  .follow img {
+    margin: 5px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; }
 
 @media (min-width: 500px) {
   .main .main-list {
