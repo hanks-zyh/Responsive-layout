@@ -43,19 +43,73 @@
 <section>
     <div class="banner">
         <div class="container">
-            <div class="slider-item">
-                <img src="img/banner.jpg" alt="懒惰是很奇怪的东西，它使你以为那是安逸"/>                </a>
-                <div class="flex-caption">
-                    <h2><a href="http://www.520why.com/?p=354" target="_blank" rel="nofollow">懒惰是很奇怪的东西，它使你以为那是安逸</a>
-                    </h2>
+            <div id="myCarousel" class="carousel slide">
+                <!-- 轮播（Carousel）指标 -->
+                <!--<ol class="carousel-indicators">-->
+                <!--<li data-target="#myCarousel" data-slide-to="0" class="active"></li>-->
+                <!--<li data-target="#myCarousel" data-slide-to="1"></li>-->
+                <!--<li data-target="#myCarousel" data-slide-to="2"></li>-->
+                <!--</ol>-->
+                <!-- 轮播（Carousel）项目 -->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <div class="slider-item">
+                            <img src="img/banner01.jpg" alt="懒惰是很奇怪的东西，它使你以为那是安逸"/>
 
-                    <p class="slides_entry">
-                        　　懒惰是很奇怪的东西，它使你以为那是安逸，是休息，是福气。但实际上他所给你的是无聊，是倦态，是消沉。他剥夺你对前途的希望，割断你和别人之间的友情，使你心胸日渐狭窄，对人生也越来越怀疑。
-                        　　人生就像饺子，无论是被拖下水，还是自己跳下水，一生中不...， </p>
+                            <div class="flex-caption">
+                                <h2><a href="http://www.520why.com/?p=354" target="_blank" rel="nofollow">懒惰是很奇怪的东西，它使你...</a>
+                                </h2>
 
-                    <p class="btns"><a href="http://www.520why.com/?p=354" target="_blank" rel="nofollow">阅读全部</a></p>
+                                <p class="slides_entry">
+                                    　　懒惰是很奇怪的东西，它使你以为那是安逸，是休息，是福气。但实际上他所给你的是无聊，是倦态，是消沉。他剥夺你对前途的希望，割断你和别人之间的友情，使你心胸日渐狭窄，对人生也越来越怀疑。
+                                    　　人生就像饺子，无论是被拖下水，还是自己跳下水，一生中不...， </p>
+
+                                <p class="btns"><a href="http://www.520why.com/?p=354" target="_blank" rel="nofollow">阅读全部</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="slider-item">
+                            <img src="img/banner02.jpg" alt="旅行语录"/>
+
+                            <div class="flex-caption">
+                                <h2><a href="http://www.520why.com/?p=354" target="_blank" rel="nofollow">旅行语录</a>
+                                </h2>
+
+                                <p class="slides_entry">
+                                    　　不要让未来的你，讨厌现在的自己。我正在努力变成自己喜欢的那个自己。与其祈求生活平淡点，还不如自己强大点。
+                                    不管爱情，还是友情，终极的目的不是归宿，而是理解、默契——是要找一个可以边走边谈的人，无论什么时候，无论怎样的心情。 爱都是一样的，好比对旅行... </p>
+
+                                <p class="btns"><a href="http://www.520why.com/?p=354" target="_blank" rel="nofollow">阅读全部</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="slider-item">
+                            <img src="img/banner03.jpg" alt="为生活而生，为生活而活"/>                </a>
+                            <div class="flex-caption">
+                                <h2><a href="http://www.520why.com/?p=354" target="_blank" rel="nofollow">为生活而生，为生活而活</a>
+                                </h2>
+
+                                <p class="slides_entry">在我们周围有这样一群人，他们和我们一样，却又有那么一点点不一样。
+                                    在他们眼中，“享受生活”不是一个态度，而是一个决定，当你决定选择拥抱生活，生活也会用最好的一面犒赏你。 他们相信两点之间最近的不是两点一线，而是不给生活设限。
+                                    他们信仰平凡不是生活的...</p>
+
+                                <p class="btns"><a href="http://www.520why.com/?p=354" target="_blank" rel="nofollow">阅读全部</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+                <!-- 轮播（Carousel）导航 -->
+                <!-- <a class="carousel-control left" href="#myCarousel"
+                    data-slide="prev">&lsaquo;</a>
+                <a class="carousel-control right" href="#myCarousel"
+                   data-slide="next">&rsaquo;</a>-->
             </div>
+
         </div>
     </div>
 </section>
@@ -159,7 +213,7 @@
                             <img src="img/pic02.jpg">
                             <img src="img/pic01.jpg">
                         </div>
-                        <button type="button" class="btn btn-follow">关注我</button>
+                        <p class="btns"><a href="http://www.520why.com/?p=354" target="_blank" rel="nofollow">关注</a></p>
                     </div>
                 </div>
             </div>
@@ -178,6 +232,11 @@
         @张小窝
     </div>
 </footer>
+<script>
+    window.onload = function () {
+        $('.carousel').carousel();
+    }
+</script>
 <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
 <script src="js/jquery.min.js"></script>
 <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->

@@ -1,3 +1,7 @@
+@charset "UTF-8";
+* {
+  font-family: "微软雅黑"; }
+
 header {
   background-color: #363D4C; }
 
@@ -13,38 +17,45 @@ header {
   .banner .slider-item {
     display: -webkit-flex;
     display: flex;
-    flex-direction: row; }
+    flex-direction: row;
+    height: 300px; }
     .banner .slider-item img {
       width: 500px;
-      height: 300px; }
-  .banner .flex-caption {
-    padding: 0px 0px 0px 40px; }
-    .banner .flex-caption h2 {
-      margin-bottom: 10px;
-      padding: 10px 0 10px 0;
-      font-size: 1.5em;
-      overflow: hidden;
-      color: #3D4B66; }
-    .banner .flex-caption .slides_entry {
-      display: block !important;
-      color: #626773;
-      font-size: 14px;
-      line-height: 2em;
-      text-align: justify;
-      height: 130px; }
-    .banner .flex-caption .btns {
-      display: block !important;
-      margin-top: 20px;
-      width: 125px;
-      background-color: #46B855;
-      float: right;
-      padding: 10px 30px 10px 30px;
-      border-radius: 3px; }
-      .banner .flex-caption .btns a {
-        color: #FFFFFF;
-        text-decoration: none; }
+      height: auto; }
+    .banner .slider-item .flex-caption {
+      width: 400px;
+      padding: 0px 0px 0px 40px; }
+      .banner .slider-item .flex-caption h2 {
+        margin-top: 0px;
+        margin-bottom: 10px;
+        padding: 10px 0 10px 0;
+        font-size: 1.5em;
+        overflow: hidden; }
+        .banner .slider-item .flex-caption h2 a {
+          color: #3D4B66;
+          text-decoration: none; }
+      .banner .slider-item .flex-caption .slides_entry {
+        display: block !important;
+        color: #626773;
+        font-size: 14px;
+        line-height: 2em;
+        text-align: justify;
+        height: 130px; }
   .banner li {
     list-style: none; }
+
+.btns {
+  display: block !important;
+  margin-top: 20px;
+  width: 125px;
+  background-color: #46B855;
+  float: right;
+  text-align: center;
+  padding: 10px 30px 10px 30px;
+  border-radius: 3px; }
+  .btns a {
+    color: #FFFFFF;
+    text-decoration: none; }
 
 .wrapper {
   background-color: #F0F2F7; }
@@ -73,14 +84,14 @@ header {
       .main .main-list .list-item .item-right {
         width: 57%; }
         .main .main-list .list-item .item-right h2 {
-          font-size: 1.6em;
+          font-size: 1.3em;
           margin-top: 0;
           margin-bottom: 13px; }
           .main .main-list .list-item .item-right h2 a {
             color: #3D4B66; }
         .main .main-list .list-item .item-right p {
           color: #626773;
-          font-size: 1em;
+          font-size: 0.6em;
           line-height: 1.8em;
           height: 100px;
           overflow: hidden; }
@@ -90,29 +101,32 @@ header {
           border-radius: 50%; }
         .main .main-list .list-item .item-right .item-info {
           float: right; }
+    .main .main-list .list-item:hover {
+      box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5); }
   .main .main-right {
     width: 27%; }
-    .main .main-right .me {
-      margin-top: 2em;
-      margin-bottom: 1em;
-      padding: 2em;
-      background-color: #FFFFFF;
-      box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
-      display: flex;
-      flex-flow: column wrap;
-      align-items: center; }
-      .main .main-right .me .follow {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-between;
-        text-align: center; }
-        .main .main-right .me .follow img {
-          margin: 5px;
-          width: 40px;
-          height: 40px;
-          border-radius: 50%; }
-        .main .main-right .me .follow .btn-follow {
-          margin-top: 40px; }
+
+.me {
+  width: 100%;
+  margin-top: 2em;
+  margin-bottom: 1em;
+  padding: 2em;
+  background-color: #FFFFFF;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center; }
+  .me .follow {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    text-align: center; }
+    .me .follow img {
+      margin: 5px;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%; }
 
 @media (min-width: 500px) {
   .main .main-list {
