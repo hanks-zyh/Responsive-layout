@@ -95,7 +95,7 @@ header {
             color: #3D4B66; }
         .main .main-list .list-item .item-right p {
           color: #626773;
-          font-size: 0.6em;
+          font-size: 1em;
           line-height: 1.8em;
           height: 100px;
           overflow: hidden;
@@ -136,7 +136,7 @@ header {
     height: 40px;
     border-radius: 50%; }
   .follow p {
-    font-size: 0.7em;
+    font-size: 1em;
     color: #626773; }
 
 /* 切换卡 */
@@ -148,7 +148,7 @@ header {
     border-bottom: 1px solid #F0F2F7; }
     .rank-list li a {
       color: #626773;
-      font-size: 0.3em;
+      font-size: 1em;
       line-height: 3em; }
 
 /*标签云*/
@@ -159,7 +159,8 @@ header {
   .label-cloud .label-item {
     border: 1px solid #46B855;
     padding: 0.5em 0.5em;
-    margin: 1em 0.2em; }
+    margin: 1em 0.2em;
+    font-size: 1em; }
 
 /*文章归档*/
 .tutime-list {
@@ -177,7 +178,7 @@ header {
   flex-flow: row wrap; }
 
 .link-item {
-  font-size: 0.2em;
+  font-size: 1em;
   color: #737f99;
   padding: 0.1em;
   margin: 0.3em 0.3em; }
@@ -246,7 +247,7 @@ header {
   font-size: 1em; }
 .comment-list .floor {
   color: #737f99;
-  font-size: 0.3em; }
+  font-size: 1em; }
 .comment-list p {
   font-size: 1em;
   color: #3D4B66;

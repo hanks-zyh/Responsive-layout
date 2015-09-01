@@ -126,7 +126,7 @@ header {
         }
         p {
           color: $fontColor2;
-          font-size: 0.6em;
+          font-size: 1em;
           line-height: 1.8em;
           height: 100px;
           overflow: hidden;
@@ -181,7 +181,7 @@ header {
     border-radius: 50%;
   }
   p {
-    font-size: 0.7em;
+    font-size: 1em;
     color: $fontColor2;
   }
 }
@@ -195,7 +195,7 @@ header {
     border-bottom: 1px solid $bgGrey;
     a {
       color: $fontColor2;
-      font-size: 0.3em;
+      font-size: 1em;
       line-height: 3em;
     }
   }
@@ -210,6 +210,7 @@ header {
     border: 1px solid $bgGreen;
     padding: 0.5em 0.5em;
     margin: 1em 0.2em;
+    font-size: 1em;
   }
 }
 
@@ -232,7 +233,7 @@ header {
 }
 
 .link-item {
-  font-size: 0.2em;
+  font-size: 1em;
   color: $fontColor3;
   padding: 0.1em;
   margin: 0.3em 0.3em;
@@ -333,7 +334,7 @@ header {
   }
   .floor {
     color: $fontColor3;
-    font-size: 0.3em;
+    font-size: 1em;
   }
   p {
     font-size: 1em;
