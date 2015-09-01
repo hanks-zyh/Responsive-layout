@@ -197,6 +197,11 @@ header {
   .main .main-right {
     width: 27%; } }
 /*   文章详情 */
+.article-detail article h2 {
+  color: #3D4B66; }
+.article-detail article .post-title {
+  color: #737f99; }
+
 .post-content {
   padding: 0;
   color: #626773; }
@@ -244,9 +249,16 @@ header {
   color: #737f99;
   font-size: 0.3em; }
 .comment-list p {
-  font-size: 1.2em;
+  font-size: 1em;
   color: #3D4B66;
   margin: 1em 0; }
+.comment-list .child-comment-list {
+  border-left: 10px solid #F0F2F7;
+  padding: 0 8px; }
+  .comment-list .child-comment-list .child-comment-item {
+    font-size: 10px; }
+    .comment-list .child-comment-list .child-comment-item .child-comment-footer {
+      color: #737f99; }
 .comment-list .comment-footer {
   text-align: right; }
 

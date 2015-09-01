@@ -161,7 +161,7 @@ header {
   background-color: $bgWhite;
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
   text-align: center;
-  h2{
+  h2 {
     font-size: 1.3em;
     color: $fontColor1;
     text-align: left;
@@ -180,9 +180,9 @@ header {
     height: 40px;
     border-radius: 50%;
   }
-  p{
-      font-size: 0.7em ;
-      color: $fontColor2;
+  p {
+    font-size: 0.7em;
+    color: $fontColor2;
   }
 }
 
@@ -259,39 +259,49 @@ header {
   }
 }
 
-
-
 /*   文章详情 */
 
-.post-content{
-    padding: 0;
-    color: $fontColor2;
-    
-    p{
-        font-size: 1.1em;
-        line-height: 1.7em;
-        text-align: justify;    
+.article-detail {
+  article {
+
+    h2 {
+      color: $fontColor1;
     }
-    
-    img{
-        margin: 2em auto;
+    .post-title {
+      color: $fontColor3;
     }
+  }
 }
 
+.post-content {
+  padding: 0;
+  color: $fontColor2;
+
+  p {
+    font-size: 1.1em;
+    line-height: 1.7em;
+    text-align: justify;
+  }
+
+  img {
+    margin: 2em auto;
+  }
+}
 
 .article-footer {
   width: 100%;
   margin: 3em 0;
   font-size: 1.2em;
   color: #666;
-  
-  .like{
-      text-align: center;
-  padding: 1.2em 1.2em;
-  margin: 1.2em 0;
-  color: $fontColor2;
+
+  .like {
+    text-align: center;
+    padding: 1.2em 1.2em;
+    margin: 1.2em 0;
+    color: $fontColor2;
   }
 }
+
 .other-article {
   width: 100%;
   display: flex;
@@ -300,58 +310,74 @@ header {
   font-size: 1.1em;
   color: $bgGreen;
 }
+
+//文章评论
 .comment {
   width: 100%;
-  p{
-      font-size: 1em;
-      color: $fontColor3;
+  p {
+    font-size: 1em;
+    color: $fontColor3;
   }
-  
+
 }
 
-.comment-list{
-    img{
-        width: 40px;
-  height: 40px;
-  float: left;
-  margin: 0 1em 0 0;
-    }
-    .author{
-        color: $fontColor2;
-        font-size: 1em;
-    }
-    .floor{
+.comment-list {
+  img {
+    width: 40px;
+    height: 40px;
+    float: left;
+    margin: 0 1em 0 0;
+  }
+  .author {
+    color: $fontColor2;
+    font-size: 1em;
+  }
+  .floor {
+    color: $fontColor3;
+    font-size: 0.3em;
+  }
+  p {
+    font-size: 1em;
+    color: $fontColor1;
+    margin: 1em 0;
+  }
+
+  //子评论
+  .child-comment-list {
+    border-left: 10px solid $bgGrey;
+    padding: 0 8px;
+    .child-comment-item {
+      font-size: 10px;
+      p {
+      }
+      .child-comment-footer {
         color: $fontColor3;
-        font-size: 0.3em;
+      }
     }
-    p{
-        font-size: 1.2em;
-        color: $fontColor1;
-        margin: 1em 0;
-    }
-    .comment-footer{
-        text-align: right;
-    }
+  }
+  .comment-footer {
+    text-align: right;
+  }
 }
 
-.new_comment{
-    width: 100%;
-  margin: 1em 0 0 0;
- 
-}
-.comment-text{
-    
-.comment-content {
+.new_comment {
   width: 100%;
-  min-height: 7em;
-  margin: 1.2em 0 1em 0;
-  }
-  input{      
-  float: left;
-  margin: 0 1em 0em 0;
-  }
+  margin: 1em 0 0 0;
+
 }
 
+.comment-text {
+
+  .comment-content {
+    width: 100%;
+    min-height: 7em;
+    margin: 1.2em 0 1em 0;
+  }
+  input {
+    float: left;
+    margin: 0 1em 0em 0;
+  }
+}
 
 footer {
   background-color: $bgBlack;
