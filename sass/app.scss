@@ -6,7 +6,6 @@ $bgWhite: #FFFFFF;
 $fontColor1: #3D4B66;
 $fontColor2: #626773;
 $fontColor3: #737f99;
-
 * {
   font-family: "微软雅黑";
 }
@@ -34,19 +33,21 @@ header {
     display: flex;
     flex-direction: row;
     height: 300px;
+
     img {
-      width: 500px;
+      width: 50%;
       height: auto;
     }
 
     .flex-caption {
-      width: 400px;
+      width: 50%;
       padding: 0px 0px 0px 40px;
       h2 {
         margin-top: 0px;
         margin-bottom: 10px;
         padding: 10px 0 10px 0;
-        font-size: 1.5em;
+        font-size: 2.2rem;
+        white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
         a {
@@ -103,12 +104,15 @@ header {
       margin-bottom: 1em;
       padding: 2em;
       background: $bgWhite;
-      box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+      //box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+       animation: cardShadowOut 0.5s  ;
+      -webkit-animation: cardShadowOut 0.5s  ; /*Safari and Chrome*/
+      animation-fill-mode: both;
       display: flex;
       flex-flow: row wrap;
       justify-content: space-between;
       a {
-        width: 35%;
+        width: 38%;
         img {
           width: 250px;
           height: 180px;
@@ -116,21 +120,37 @@ header {
       }
       .item-right {
         width: 57%;
-        h2 {
-          font-size: 1.3em;
-          margin-top: 0;
-          margin-bottom: 13px;
-          a {
-            color: $fontColor1;
+        position: relative;
+
+        .article-title {
+          width: 70%;
+
+          h2 {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            font-size: 1.3em;
+            margin-top: 0;
+            margin-bottom: 13px;
+            a {
+              color: $fontColor1;
+            }
           }
+        }
+        .article-time {
+          font-size: 1rem;
+          color: $fontColor3;
+          position: absolute;
+          top: 5px;
+          right: 10px;
         }
         p {
           color: $fontColor2;
-          font-size: 1em;
-          line-height: 1.8em;
-          height: 100px;
+          line-height: 2rem;
+          letter-spacing: 0.1rem;
+          height: 115px;
           overflow: hidden;
-          letter-spacing: 0.1em;
+          margin: 1.5rem 0rem;
         }
 
         img {
@@ -141,16 +161,32 @@ header {
 
         .item-info {
           float: right;
+          font-size: 1rem;
+          color: $fontColor3;
         }
       }
     }
     .list-item:hover {
-      box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+      //box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+      animation: cardShadow 0.5s  ;
+      -webkit-animation: cardShadow 0.5s  ; /*Safari and Chrome*/
+      animation-fill-mode: both;
     }
+
   }
   .main-right {
     width: 27%;
   }
+}
+
+.tags {
+  font-size: 1rem;
+  color: $fontColor3;
+}
+
+.tag-item {
+  font-size: 1rem;
+  color: $fontColor3;
 }
 
 .card-right {
@@ -181,24 +217,29 @@ header {
     border-radius: 50%;
   }
   p {
-    font-size: 1em;
+    font-size: 1rem;
     color: $fontColor2;
   }
 }
 
 /* 切换卡 */
 .rank-list {
-  list-style: none;
   text-align: left;
-  li {
-    padding-top: 0.5em;
-    border-bottom: 1px solid $bgGrey;
-    a {
-      color: $fontColor2;
-      font-size: 1em;
-      line-height: 3em;
+  ul {
+    padding: 0;
+    list-style: none;
+    li {
+      padding-top: 0.5em;
+      border-bottom: 1px solid $bgGrey;
+      list-style: none;
+      a {
+        color: $fontColor2;
+        font-size: 1rem;
+        line-height: 3rem;
+      }
     }
   }
+
 }
 
 /*标签云*/
@@ -208,9 +249,9 @@ header {
   flex-flow: row wrap;
   .label-item {
     border: 1px solid $bgGreen;
-    padding: 0.5em 0.5em;
-    margin: 1em 0.2em;
-    font-size: 1em;
+    padding: 0.5rem 0.5rem;
+    margin: 1rem 0.2rem;
+    font-size: 1rem;
   }
 }
 
@@ -221,11 +262,6 @@ header {
   padding: 0px;
 }
 
-.tutime {
-  background: url(../img/datepng.png) no-repeat left center;
-  padding-left: 20px
-}
-
 /*友情链接*/
 .friend-link {
   display: flex;
@@ -233,10 +269,10 @@ header {
 }
 
 .link-item {
-  font-size: 1em;
+  font-size: 1rem;
   color: $fontColor3;
-  padding: 0.1em;
-  margin: 0.3em 0.3em;
+  padding: 0.4rem 0.8rem 0.4rem 0;
+  margin: 0.3rem 0 0.3rem 0rem;
 }
 
 /* 响应式 */
@@ -263,7 +299,7 @@ header {
 
 .article-detail {
   article {
-
+    overflow: hidden;
     h2 {
       color: $fontColor1;
     }
@@ -391,10 +427,53 @@ ul.share-group {
   width: 100%;
   margin: 0 auto;
   padding: 40px;
+
+  a {
+    color: $bgWhite;
+    li {
+      display: inline-block;
+      padding: 15px;
+    }
+  }
+
 }
 
-.share-group li {
-  display: inline-block;
-  padding: 10px;
+//动画
+
+@keyframes cardShadow {
+  from {
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+  }
+  to {
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+  }
 }
 
+@-webkit-keyframes cardShadow /*Safari and Chrome*/
+{
+  from {
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+  }
+  to {
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+  }
+}
+
+@keyframes cardShadowOut {
+  from {
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+  }
+  to {
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+  }
+}
+
+@-webkit-keyframes cardShadowOut /*Safari and Chrome*/
+{
+  from {
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+  }
+  to {
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+  }
+}
